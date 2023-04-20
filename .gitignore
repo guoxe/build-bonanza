@@ -1,2 +1,5 @@
 /venv/
 /build/
+/subprojects/packagecache/
+/.cache/
+/subprojects/*/*
