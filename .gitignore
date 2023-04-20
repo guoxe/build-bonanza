@@ -3,3 +3,4 @@
 /subprojects/packagecache/
 /.cache/
 /subprojects/*/*
+/src/rslib/target/

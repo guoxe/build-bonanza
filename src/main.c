@@ -1,5 +1,6 @@
 #include <cjson/cJSON.h>
 #include <stdio.h>
+#include <hellors.h>
 
 int main(int argc, char *argv[]) {
   cJSON *json = cJSON_CreateObject();
@@ -12,5 +13,6 @@ int main(int argc, char *argv[]) {
   }
   printf("%s\n", cJSON_Print(json));
   cJSON_Delete(json);
+  hello();
   return 0;
 }
