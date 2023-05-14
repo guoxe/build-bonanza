@@ -4,3 +4,4 @@
 /.cache/
 /subprojects/*/*
 /target/
+/compile_commands.json

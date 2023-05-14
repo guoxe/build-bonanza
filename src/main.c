@@ -1,5 +1,4 @@
 #include <cjson/cJSON.h>
-#include <hellors.h>
 #include <stdio.h>
 
 #include "lib.h"
@@ -15,7 +14,6 @@ int main(int argc, char *argv[]) {
   }
   printf("%s\n", cJSON_Print(json));
   cJSON_Delete(json);
-  hello();
   printf("%d\n", square(2));
   return 0;
 }
