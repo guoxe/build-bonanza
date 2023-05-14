@@ -3,8 +3,12 @@
 #include <stdlib.h>
 
 #include "lib.h"
+#include "rslib.h"
 
 START_TEST(test_foo) { ck_assert_int_eq(square(2), 4); }
+END_TEST
+
+START_TEST(test_cube) { ck_assert_int_eq(cube(3), 27); }
 END_TEST
 
 static Suite *core_suite(void) {
@@ -13,6 +17,7 @@ static Suite *core_suite(void) {
   s = suite_create("Core suite");
   tc_core = tcase_create("Core");
   tcase_add_test(tc_core, test_foo);
+  tcase_add_test(tc_core, test_cube);
   suite_add_tcase(s, tc_core);
   return s;
 }

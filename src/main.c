@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #include "lib.h"
+#include "rslib.h"
 
 int main(int argc, char *argv[]) {
   cJSON *json = cJSON_CreateObject();
@@ -15,5 +16,6 @@ int main(int argc, char *argv[]) {
   printf("%s\n", cJSON_Print(json));
   cJSON_Delete(json);
   printf("%d\n", square(2));
+  hello();
   return 0;
 }

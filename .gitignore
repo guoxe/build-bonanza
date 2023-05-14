@@ -3,5 +3,5 @@
 /subprojects/packagecache/
 /.cache/
 /subprojects/*/*
-/target/
+/crates/target/
 /compile_commands.json

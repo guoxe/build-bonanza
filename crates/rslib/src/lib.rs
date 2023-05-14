@@ -3,7 +3,8 @@ pub extern "C" fn hello() {
     println!("Hello from rust");
 }
 
-fn _cube(i: i32) -> i32 {
+#[no_mangle]
+pub extern "C" fn cube(i: i32) -> i32 {
     i * i * i
 }
 
@@ -13,6 +14,6 @@ mod tests {
 
     #[test]
     fn cube_test() {
-        assert_eq!(_cube(3), 27)
+        assert_eq!(cube(3), 27)
     }
 }
